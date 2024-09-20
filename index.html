@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Bootstrap JS -->
+    <script defer src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script propio -->
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Área de trabajo -->
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        
+        <!-- Contenedor para la calculadora -->
+        <div class="calculadora-contenedor w-25 border border-2">
+            
+            <!-- Pantalla de la calculadora -->
+            <div class="row mx-2 mt-3">
+                <div class="col-12 border border-dark contenedor-pantalla-resultado">
+                    <input type="text" class="border-0" id="pantalla-resultado" disabled>
+                </div>
+            </div>
+
+            <!-- Primera fila de botones -->
+            <div class="row m-2 g-2">
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(7)">7</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(8)">8</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(9)">9</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-3 boton-reset" value="AC" disabled>AC</button>
+                </div>
+            </div>
+
+            <!-- Segunda fila de botones -->
+            <div class="row mx-2 mb-2 g-2">
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(4)">4</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(5)">5</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(6)">6</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-3 boton-borrar" value="X" disabled>X</button>
+                </div>
+            </div>
+
+            <!-- Tercera fila de botones -->
+            <div class="row mx-2 mb-2 g-2">
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(1)">1</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(2)">2</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico" onclick="agregarNumero(3)">3</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-3 boton-operacion boton-dividir" value="/" disabled>/</button>
+                </div>
+            </div>
+
+            <!-- Cuarta fila de botones -->
+            <div class="row mx-2 mb-2 g-2">
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-operacion boton-restar" value="-" disabled>-</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-numerico boton-cero" onclick="agregarNumero(0)">0</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-operacion boton-sumar" value="+" disabled>+</button>
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn fs-3 boton-operacion boton-multiplicar" value="*" disabled>*</button>
+                </div>
+            </div>
+
+            <!-- Quinta fila de botones -->
+            <div class="row mx-2 mb-3 g-2">
+                <div class="col-3">
+                    <button type="button" class="btn fs-4 boton-igual" value="=" disabled>=</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
